@@ -13,6 +13,8 @@ const config: Config = {
         "custom-gradient-image": `url('/assets/images/signup.svg')`,
         "custom-gradient":
           "linear-gradient(to bottom right, #D39720 0%, #6A4D13 50%, #0B0B09 100%)",
+        "custom-gold-gradient":
+          "linear-gradient(to top, #090703 40%, #A4813D 71%, #D5AC5B 83%, #E6D1A7 100%)",
       },
       keyframes: {
         "caret-blink": {
@@ -24,8 +26,8 @@ const config: Config = {
         "caret-blink": "caret-blink 1.25s ease-out infinite",
       },
       colors: {
-        background: "hsl(var(--background))",
-        foreground: "hsl(var(--foreground))",
+        background: "var(--background)",
+        foreground: "var(--foreground)",
         card: {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
@@ -39,8 +41,8 @@ const config: Config = {
           foreground: "hsl(var(--primary-foreground))",
         },
         secondary: {
-          DEFAULT: "hsl(var(--secondary))",
-          foreground: "hsl(var(--secondary-foreground))",
+          DEFAULT: "var(--secondary)",
+          foreground: "var(--secondary-foreground)",
         },
         muted: {
           DEFAULT: "hsl(var(--muted))",

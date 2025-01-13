@@ -1,8 +1,19 @@
+import React from "react";
+import Head from "next/head";
 
-export default function layout() {
+export default function Layout({
+  children,
+  title = "Plugin | Register",
+}: {
+  children: React.ReactNode;
+  title?: string;
+}) {
   return (
-    <div>
-      
-    </div>
-  )
+    <>
+      <Head>
+        <title>{title}</title>
+      </Head>
+      {children}
+    </>
+  );
 }
